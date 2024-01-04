@@ -27,13 +27,13 @@ const Home = () => {
           <motion.div className='home-content' {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className='head-text'>
-                LET'S <br className='xl:block hidden'/> DO IT.
+                Welcome to <br className='xl:block hidden'/> JShirtify.
               </h1>
             </motion.div>
             <motion.div
              {...headContentAnimation}
              className='flex flex-col gap-5'>
-              <p className = 'max-w-md font-normal text-gray-600 text-base'>Create your own creative design with our 3D customization tools! <strong>Unleash your creativity!</strong></p>
+              <p className = 'max-w-md font-normal text-gray-600 text-base'>Create and customize your very own t-shirt with our interactive app <strong>Unlock the power of AI or use our customization tools to unleash your creativity!</strong></p>
               <CustomButton
               type='filled'
               title='Customize It'
