@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSnapshot } from 'valtio';
+
 import state from '../store';
 import { CustomButton } from '../components';
-
 import {
   headContainerAnimation,
   headContentAnimation,
@@ -12,39 +12,43 @@ import {
 
 const Home = () => {
   const snap = useSnapshot(state);
+
   return (
     <AnimatePresence>
       {snap.intro && (
-        <motion.section className='home' {...slideAnimation('left')}>
+        <motion.section className="home" {...slideAnimation('left')}>
           <motion.header {...slideAnimation("down")}>
             <img
               src='./threejs.png'
-              alt='logo'
-              className='w-8 h-8 object-contain'
-              />
+              alt="logo"
+              className="w-8 h-8 object-contain"
+            />
           </motion.header>
 
-          <motion.div className='home-content' {...headContainerAnimation}>
+          <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className='head-text'>
-                Welcome to <br className='xl:block hidden'/> JShirtify.
+              <h1 className="head-text">
+                Welcome to <br className="xl:block hidden" /> J Shirtify.
               </h1>
             </motion.div>
             <motion.div
-             {...headContentAnimation}
-             className='flex flex-col gap-5'>
-              <p className = 'max-w-md font-normal text-gray-600 text-base'>Create and customize your very own t-shirt with our interactive app <strong>Unlock the power of AI or use our customization tools to unleash your creativity!</strong></p>
+              {...headContentAnimation}
+              className="flex flex-col gap-5"
+            >
+              <p className="max-w-md font-normal text-gray-600 text-base">
+              Create your own shirt with our state of the art customization tools! <strong>Upload your own pre-made logo, or unlock the power of A.I. to generate a fresh logo using your own specifications.</strong>{" "} Define your own style!
+              </p>
+
               <CustomButton
-              type='filled'
-              title='Customize It'
-              handleClick={() => state.intro = false}
-              customStyle='w-fit px-4 py-2.5 font-bold text-sm'
+                type="filled"
+                title="Customize It"
+                handleClick={() => state.intro = false}
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
             </motion.div>
           </motion.div>
-
         </motion.section>
-        )}
+      )}
     </AnimatePresence>
   )
 }

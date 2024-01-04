@@ -34,7 +34,7 @@ const FilePicker = ({ file, setFile, readFile}) => {
       customStyles='text-xs'
       />
     </div>
-    FilePicker
+
 
     </div>
   )
