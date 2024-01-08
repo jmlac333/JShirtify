@@ -28,7 +28,7 @@ const Home = () => {
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                Welcome to <br className="xl:block hidden" /> J Shirtify.
+                Welcome to <br className="xl:block hidden" /> J Shirtify by John Lee.
               </h1>
             </motion.div>
             <motion.div
@@ -38,6 +38,8 @@ const Home = () => {
               <p className="max-w-md font-normal text-gray-600 text-base">
               Create your own shirt with our state of the art customization tools! <strong>Upload your own pre-made logo, or unlock the power of A.I. to generate a fresh logo using your own specifications.</strong>{" "} Define your own style!
               </p>
+
+
 
               <CustomButton
                 type="filled"
