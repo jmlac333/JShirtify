@@ -1,9 +1,9 @@
 const config = {
   development: {
-    backendUrl: "https://main.d711nakvjbiov.amplifyapp.com/api/v1/dalle",
+    backendUrl: "https://jshirtify-server.onrender.com/api/v1/dalle",
   },
   production: {
-    backendUrl: "https://main.d711nakvjbiov.amplifyapp.com/api/v1/dalle",
+    backendUrl: "https://jshirtify-server.onrender.com/api/v1/dalle",
   },
 };
 
