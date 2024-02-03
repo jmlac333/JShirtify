@@ -40,5 +40,10 @@ router.route('/').post(async (req, res) => {
   }
 })
 
+catch (error) {
+  console.error('Error details:', error);
+  res.status(500).json({ message: "something went wrong" })
+}
+
 export default router;
 
