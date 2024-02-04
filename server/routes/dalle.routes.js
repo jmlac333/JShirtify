@@ -6,6 +6,8 @@ import OpenAi from 'openai'
 
 dotenv.config();
 
+require('dotenv').config();
+
 
 const router = express.Router();
 
